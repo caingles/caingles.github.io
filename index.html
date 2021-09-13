@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--estilos css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <!-- font-family Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CDN de FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!-- Libreria de animated.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Christian Ingles</title>
+  </head>
+  <body>
+    <!-- primera fila -->
+    <header class="contenedor header">
+      <div id="logo" class="logo">
+        <img src="img/logo-dark.png" alt=""/>
+      </div>
+
+      <ul class="navbar">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#aboutMe">About me</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li id="contact" class="button-principal">
+          <a href="index.html#contacts">Contact</a>
+        </li>
+        <li id="icon-mode">
+          <i id="icon-moon" class="fas fa-moon"></i>
+          <i id="icon-sun" class="fas fa-sun"></i>
+        </li>
+      </ul>
+    </header>
+
+    <!-- segunda fila -->
+    <main class="contenedor hero row animate__animated animate__heartBeat">
+      <a name="home"></a>
+      <div class="info-personal">
+        <h1 class="titulo ">Christian Andrés Inglés Argueta</h1>
+        <p class="subtitle">Front-End Developer</p>
+        <a href="index.html#contacts">
+        <button class="button-principal btn">
+          Contact me <i class="fas fa-share-square"></i>
+        </button>
+      </a>
+      </div>
+
+      <div class="imagen-principal">
+        <img src="img/img-principal1.png" alt="" />
+      </div>
+    </main>
+
+    <!-- tercera fila -->
+    <main class="contenedor heros rows">
+      <a name="aboutMe"></a>
+      <h1 class="titulos">About me</h1>
+      <div  class="parrafos">
+        <p>
+          Fanatico del desarrollo web y todo lo relacionado. Mi area 
+          favorita y de mayor experiencia es el desarrollo front-end, 
+          dominando y aprendiendo muchas de las tecnologias relacionadas
+          a esta area, sin embargo, tambien domino tecnologias relacionadas al
+          desarrollo back-end. Creo sitios web responsivos (adaptable a diferentes dispositivos)
+          e intuitivos para el usuario.
+        </p>
+
+        <a href="dowload/curriculum.pdf" target="_blank">
+          <button id="cv" class="button-principal btn">
+            Curriculum Vitae <i class="fas fa-arrow-circle-down"></i>
+          </button>
+        </a>
+      </div>
+      <div class="img-yo">
+        <img src="img/img-principal.png" alt="" />
+      </div>
+    </main>
+
+    <!-- cuarta fila -->
+    <main class="contenedor heros rows">
+      <a name="skills"></a>
+      <h1 id="title2" class="titulos">Skills</h1>
+
+      <div  class="frontend">
+        <div class="titles">
+          <h3 class="titulo">
+            <i class="fas fa-code"></i> Front-End Developer
+          </h3>
+        </div>
+
+        <div class="skilldate">
+          <div class="skillTitle">
+            <p>HTML</p>
+            <p>90%</p>
+          </div>
+          <div class="progress">
+            <div id="html" class="progress-done" data-done="70"></div>
+          </div>
+        </div>
+
+        <div class="skilldate">
+          <div class="skillTitle">
+            <p>CSS</p>
+            <p>75%</p>
+          </div>
+          <div class="progress">
+            <div id="css" class="progress-done" data-done="10"></div>
+          </div>
+        </div>
+
+        <div class="skilldate">
+          <div class="skillTitle">
+            <p>JavaScript</p>
+            <p>70%</p>
+          </div>
+          <div class="progress">
+            <div id="js" class="progress-done" data-done="50"></div>
+          </div>
+        </div>
+
+        <div class="skilldate">
+          <div class="skillTitle">
+            <p>Bootstrap</p>
+            <p>90%</p>
+          </div>
+          <div class="progress">
+            <div id="bootstrap" class="progress-done" data-done="50"></div>
+          </div>
+        </div>
+
+        <div class="skilldate">
+          <div class="skillTitle">
+            <p>Diseño responsivo</p>
+            <p>90%</p>
+          </div>
+          <div class="progress">
+            <div
+              id="diseñoResponsivo"
+              class="progress-done"
+              data-done="50"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skilldate">
+          <div class="skillTitle">
+            <p>React.js</p>
+            <p>(en curso) 50%</p>
+          </div>
+          <div class="progress">
+            <div id="reactjs" class="progress-done" data-done="50"></div>
+          </div>
+        </div>
+
+        <div class="skilldate">
+          <div class="skillTitle">
+            <p>GitHub</p>
+            <p>60%</p>
+          </div>
+          <div class="progress">
+            <div id="github" class="progress-done" data-done="50"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="backend">
+        <div class="titles">
+          <h3 class="titulo"><i class="fas fa-code"></i> Back-End Developer</h3>
+        </div>
+
+        <div class="skilldate">
+          <div class="skillTitle">
+            <p>PHP</p>
+            <p>50%</p>
+          </div>
+          <div class="progress">
+            <div id="php" class="progress-done" data-done="70"></div>
+          </div>
+        </div>
+
+        <div class="skilldate">
+          <div class="skillTitle">
+            <p>MySQL</p>
+            <p>40%</p>
+          </div>
+          <div class="progress">
+            <div id="mysql" class="progress-done" data-done="70"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+<!-- Quinta fila -->
+    <section class="contenedor">
+      <a name="contacts"></a>
+      <h1 class="titulo">Contact me</h1>
+
+      <div class="redes-sociales">
+        
+        <div class="boton">
+          <a href="mailto:christianarguetaaa@gmail.com">
+          <div class="icon-redes">
+            <i class="fas fa-at"></i>
+          </div>
+        </a>
+          <span><a href="mailto:christianarguetaaa@gmail.com">Gmail</a></span>
+        </div>
+
+        <div class="boton">
+          <a href="https://www.instagram.com/ca_ingles/">
+            <div class="icon-redes">
+              <i class="fab fa-instagram"></i></div
+          ></a>
+          <span
+            ><a href="https://www.instagram.com/ca_ingles/">Instagram</a></span
+          >
+        </div>
+
+        <div class="boton">
+          <a href="https://wa.me/50360070123">
+            <div class="icon-redes">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+          </a>
+          <span><a href="https://wa.me/50360070123">WhatsApp</a></span>
+        </div>
+
+        <div class="boton">
+          <div class="icon-redes">
+            <i id="git" class="fab fa-github"></i>
+          </div>
+          <span>GitHub</span>
+        </div>
+
+        <div class="boton">
+          <a
+            href="https://www.linkedin.com/in/christian-andres-ingles-argueta-698501199/"
+          >
+            <div class="icon-redes">
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </a>
+          <span
+            ><a
+              href="https://www.linkedin.com/in/christian-andres-ingles-argueta-698501199/"
+              >LinkedIn</a
+            ></span
+          >
+        </div>
+      </div>
+    </section>
+    <script src="js/animacion.js"></script>
+  </body>
+</html>
