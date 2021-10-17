@@ -49,7 +49,7 @@ a {
   padding: 10px 5px 5px 5px;
 }
 
-.button-principal {
+.button-main {
   background: var(--main-color);
   color: var(--body-color);
   border: none;
