@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--estilos css -->
+    <!--style css -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mediaQuery.css">
+    <link rel="stylesheet" href="css/mediaQuery.css" />
     <!-- font-family Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,18 +21,20 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <!-- Libreria de animated.css -->
+    <!--animated.css library -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <title>Christian Ingles</title>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="icon" href="img/icon-ingles-technologies.png" />
+    <title>Christian Inglés</title>
   </head>
-  <body>
+  <body id="particles-js">
     <!-- primera fila -->
     <header class="contenedor header">
       <div id="logo" class="logo">
-        <img src="img/logo-dark.png" alt=""/>
+        <img src="img/logo-dark.png" alt="" />
       </div>
 
       <ul class="navbar">
@@ -53,13 +55,13 @@
     <main class="contenedor hero row animate__animated animate__heartBeat">
       <a name="home"></a>
       <div class="info-personal">
-        <h1 class="titulo ">Christian Andrés Inglés Argueta</h1>
+        <h1 class="titulo">Christian Andrés Inglés Argueta</h1>
         <p class="subtitle">Front-End Developer</p>
         <a href="index.html#contacts">
-        <button class="button-main btn">
-          Contact me <i class="fas fa-share-square"></i>
-        </button>
-      </a>
+          <button class="button-main btn">
+            Contact me <i class="fas fa-share-square"></i>
+          </button>
+        </a>
       </div>
 
       <div class="imagen-principal">
@@ -71,14 +73,14 @@
     <main class="contenedor heros rows">
       <a name="aboutMe"></a>
       <h1 class="titulos">About me</h1>
-      <div  class="parrafos">
+      <div class="parrafos">
         <p>
-          Fanatico del desarrollo web y todo lo relacionado. Mi area 
-          favorita y de mayor experiencia es el desarrollo front-end, 
-          dominando y aprendiendo muchas de las tecnologias relacionadas
-          a esta area, sin embargo, tambien domino tecnologias relacionadas al
-          desarrollo back-end. Creo sitios web responsivos (adaptable a diferentes dispositivos)
-          e intuitivos para el usuario.
+          Fanático del desarrollo web y todo lo relacionado. Mi área favorita y
+          de mayor experiencia es el desarrollo front-end, dominando y
+          aprendiendo muchas de las tecnologías relacionadas a esta area, sin
+          embargo, también domino tecnologías relacionadas al desarrollo
+          back-end. Creo sitios web responsivos (adaptable a diferentes
+          dispositivos) e intuitivos para el usuario.
         </p>
 
         <a href="dowload/curriculum.pdf" target="_blank">
@@ -97,7 +99,7 @@
       <a name="skills"></a>
       <h1 id="title2" class="titulos">Skills</h1>
 
-      <div  class="frontend">
+      <div class="frontend">
         <div class="titles">
           <h3 class="titulo">
             <i class="fas fa-code"></i> Front-End Developer
@@ -127,7 +129,7 @@
         <div class="skilldate">
           <div class="skillTitle">
             <p>JavaScript</p>
-            <p>70%</p>
+            <p>65%</p>
           </div>
           <div class="progress">
             <div id="js" class="progress-done" data-done="50"></div>
@@ -136,7 +138,7 @@
 
         <div class="skilldate">
           <div class="skillTitle">
-            <p>Bootstrap</p>
+            <p>Bootstrap 4</p>
             <p>90%</p>
           </div>
           <div class="progress">
@@ -170,7 +172,7 @@
 
         <div class="skilldate">
           <div class="skillTitle">
-            <p>GitHub</p>
+            <p>Git/GitHub</p>
             <p>60%</p>
           </div>
           <div class="progress">
@@ -206,19 +208,18 @@
       </div>
     </main>
 
-<!-- Quinta fila -->
+    <!-- Quinta fila -->
     <section class="contenedor">
       <a name="contacts"></a>
       <h1 class="titulo">Contact me</h1>
 
       <div class="redes-sociales">
-        
         <div class="boton">
           <a href="mailto:christianarguetaaa@gmail.com">
-          <div class="icon-redes">
-            <i class="fas fa-at"></i>
-          </div>
-        </a>
+            <div class="icon-redes">
+              <i class="fas fa-at"></i>
+            </div>
+          </a>
           <span><a href="mailto:christianarguetaaa@gmail.com">Gmail</a></span>
         </div>
 
@@ -245,7 +246,7 @@
           <div class="icon-redes">
             <i id="git" class="fab fa-github"></i>
           </div>
-          <span>GitHub</span>
+          <span><a href="">GitHub</a></span>
         </div>
 
         <div class="boton">
@@ -266,5 +267,7 @@
       </div>
     </section>
     <script src="js/animacion.js"></script>
+    <script src="js/particles.json"></script>
+    <script src="js/particulas.js"></script>
   </body>
 </html>

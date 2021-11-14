@@ -109,7 +109,6 @@ a {
 #icon-mode:hover{
   background: none;
   color: var(--text-color);
-  padding: 5px 10px;
   border: none;
   border-radius: 5px;
 }
@@ -160,6 +159,11 @@ a {
 
 #icon-sun {
   display: none;
+  cursor: pointer;
+}
+
+#icon-moon {
+  cursor: pointer;
 }
 
 .btn{
@@ -281,7 +285,7 @@ line-height: 28px;
 }
 
 #github{
-  width: 25%;
+  width: 60%;
 }
 
 .backend{
