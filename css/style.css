@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color       : #1083D6;
+  --title-color      : #2A3B47;
+  --text-color       : #697477;
+  --light-text-color : #A0A7AC;
+  --border-color     : #EFF3F5;
+  --container-color  : #FFFFFF;
+  --body-color       : #FBFBFE;
+}
+
+/* Variables para el tema dark */
+body.dark-theme {
+  --main-color       : #3fa5ee;
+  --title-color      : #EFF3F5;
+  --text-color       : #C8CDD0;
+  --light-text-color : #A0A7AC;
+  --border-color     : #2A3B47;
+  --container-color  : #212E36;
+  --body-color       : #192229;
+}
+
+body {
+  background: var(--body-color);
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.subtitle {
+  color: var(--light-text-color);
+  padding: 10px 5px 5px 5px;
+}
+
+.button-main {
+  background: var(--main-color);
+  color: var(--body-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.contenedor {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 10% repeat(12, 1fr) 10%;
+}
+
+.header{
+  background-color: var(--container-color);
+  border-bottom: 1px solid var(--border-color)  ;
+  position: fixed;
+}
+
+.contenedor .logo {
+  height: 60px;
+  grid-column: 2/4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contenedor ul.navbar {
+  grid-column: 9/14;
+  height: 60px;
+}
+
+.contenedor ul.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor ul.navbar li {
+  list-style: none;
+  padding: 5px 10px;
+}
+
+.contenedor ul.navbar li a{
+  padding: 5px 10px;
+  color: var(--text-color);
+}
+
+.contenedor ul.navbar li a:hover{
+  background: var(--main-color);
+  color: var(--body-color);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#icon-mode:hover{
+  background: none;
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+}
+
+#contact a{
+  color: var(--body-color);
+}
+
+.row{
+  height: 100vh;
+}
+
+.rows{
+  min-height: 300px;
+}
+
+.contenedor .info-personal {
+  margin-top: 60px;
+  grid-column: 2/9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor .info-personal .titulo{
+  letter-spacing: 1px;
+}
+.contenedor .info-personal p{
+  margin-bottom: 20px;
+}
+
+.contenedor .imagen-principal {
+  grid-column: 9/14;
+  width: 400px;
+  height: auto;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  border: 0px solid  #1083d6;
+}
+
+.contenedor .imagen-principal img{
+  width: 100%;
+  height: auto;
+}
+
+#icon-sun {
+  display: none;
+  cursor: pointer;
+}
+
+#icon-moon {
+  cursor: pointer;
+}
+
+.btn{
+  cursor: pointer;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.img-logo{
+  width: 90px;
+}
+
+.titulos{
+  width: 100%;
+  margin-top: 90px;
+  grid-column: 3/-3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor .parrafos{
+  grid-column: 3/10;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contenedor .parrafos p{
+text-align: justify;
+margin-top: 25px;
+margin-bottom: 25px;
+line-height: 28px;
+}
+
+.contenedor .img-yo{
+  width: 100%;
+  height: 300px;
+  grid-column: 10/13;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #1083d600;
+}
+
+.contenedor .img-yo img{
+  width: 300px;
+  height: 300px;
+}
+
+.frontend{
+  width: 100%;
+  height: 547px;
+  grid-column: 3/8;
+}
+
+.titles{
+  padding: 5px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ------------------------------------------------------- */
+ .skilldate{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+/* ---------------------------------------------------- */
+ .skillTitle{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress{
+  background-color: var(--light-text-color);
+  border-radius: 10px;
+  height: 10px;
+  width: 100%;
+  align-self: center;
+}
+
+.progress-done{
+  background-color: var(--main-color );
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#html{
+  width: 95%;
+}
+
+#css{
+  width: 75%;
+}
+
+#js{
+  width: 70%;
+}
+
+#bootstrap{
+  width: 90%;
+}
+
+#reactjs{
+  width: 50%;
+}
+
+#diseñoResponsivo{
+  width: 90%;
+}
+
+#github{
+  width: 60%;
+}
+
+.backend{
+  width: 100%;
+  height: 547px;
+  grid-column: 9/-3;
+}
+
+#php{
+  width: 50%;
+}
+
+#mysql{
+  width: 40%;
+}
+.boton a{
+  text-decoration: none;
+}
+
+.boton span a{
+  text-decoration: none;
+  color: var(--title-color);
+}
+
+/* redes sociales */
+.redes-sociales{
+  width: 100%;
+  height: 125px;
+  grid-column: 4/-4;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.boton{
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background-color: var(--border-color);
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+  transition: all .3s ease-out;
+}
+
+.boton:hover{
+  width: 200px;
+}
+.icon-redes{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  text-align: center;
+  transition: all .3s ease-out;
+  color: var(--title-color );
+}
+
+/* Facebook */
+.boton:nth-child(1):hover .icon-redes{
+  background: #db4a39;
+  color: #fff;
+}
+/* insta */
+.boton:nth-child(2):hover .icon-redes{
+  background: linear-gradient(30deg, #3040e6 10%, #d41356, #e74f31, #f0ce6d);
+  color: #fff;
+}
+/*whatsapp*/
+.boton:nth-child(3):hover .icon-redes{
+  background: #25d366;
+  color: #fff;
+}
+
+/* Github */
+.boton:nth-child(4):hover .icon-redes{
+  background: #171515;
+  color: #fff;
+}
+
+/* linkedin */
+.boton:nth-child(5):hover .icon-redes{
+  background: #1877f2;
+  color: #fff;
+}
+
+.boton i{
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.boton span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+}
+
+.titulo{
+  grid-column: 2/-2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
